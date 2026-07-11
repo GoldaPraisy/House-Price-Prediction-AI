@@ -182,7 +182,7 @@ export default function App() {
 
   // Fetch stats from backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/stats')
+    fetch('/api/stats')
       .then(r => r.json())
       .then((d: Stats) => {
         if (d?.city_stats) { setStats(d); setApiOnline(true); }
@@ -199,7 +199,7 @@ export default function App() {
     setFlipped(false);
 
     try {
-      const res = await fetch('http://localhost:5000/api/predict', {
+      const res = await fetch('/api/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
