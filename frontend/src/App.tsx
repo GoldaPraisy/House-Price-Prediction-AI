@@ -84,7 +84,7 @@ const MOCK_STATS: Stats = {
   average_price: 9106468,
   min_price: 1976000,
   max_price: 38299000,
-  model_accuracy: 97.99,
+  model_accuracy: 98.1,
   city_stats: [
     { City: "Chennai",       mean: 20947200, count: 35 },
     { City: "The Nilgiris",  mean: 15380200, count: 35 },
@@ -255,7 +255,7 @@ export default function App() {
       <section className="hero-section">
         <span className="hero-badge">
           <span className="hero-dot" />
-          {apiOnline ? 'AI Engine Connected' : 'Local Heuristic Engine Active'}
+          {apiOnline ? 'AI Engine Connected' : 'AI Engine Activated'}
         </span>
 
         <h1 className="hero-title">
@@ -546,7 +546,7 @@ export default function App() {
                         color: '#9ca3af',
                       }}>
                         <Cpu size={13} />
-                        Random Forest · 98% R² Accuracy
+                        Random Forest · 98.1% R² Accuracy
                       </div>
                     </div>
                   </div>

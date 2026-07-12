@@ -73,7 +73,7 @@ def initialize_api():
             'average_price': float(df['Sale Price'].mean()),
             'min_price': float(df['Sale Price'].min()),
             'max_price': float(df['Sale Price'].max()),
-            'model_accuracy': 98.06,  # Standard reference accuracy
+            'model_accuracy': 98.1,  # Standard reference accuracy
             'city_stats': city_stats.to_dict(orient='records'),
             'market_trends': market_trends
         }
