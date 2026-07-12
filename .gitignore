@@ -1,4 +1,4 @@
-# Python
+# ── Python ───────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
@@ -7,22 +7,25 @@ __pycache__/
 venv/
 env/
 
-# Node
+# ── Node / npm ────────────────────────────────────────────
 node_modules/
 frontend/node_modules/
 
-# Build output (do NOT commit dist — Vercel builds it)
+# ── Vite build output (Vercel builds it) ─────────────────
 frontend/dist/
 
-# Temp / scratch
+# ── Temp / scratch files ──────────────────────────────────
 temp.txt
 temp_curl.txt
 *.log
 
-# OS
+# ── OS generated ──────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# IDE
+# ── IDE / tools ───────────────────────────────────────────
 .qodo/
 .vscode/
+
+# ── Backup datasets (keep only the active one) ────────────
+tamilnadu_house_data_original_backup.csv
